@@ -73,5 +73,8 @@ end
 # Adding submission form capabilities
 gem 'simple_form'
 
+# Adding Font Awesome library
+gem 'font-awesome-rails'
+
 # Adding user authentication
 gem 'devise'
