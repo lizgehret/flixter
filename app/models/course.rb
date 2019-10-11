@@ -1,5 +1,6 @@
 class Course < ApplicationRecord
   belongs_to :user
+  has_many :sections
 
   #title validation - needs to exist
   validates :title, presence: true
