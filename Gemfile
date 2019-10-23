@@ -78,3 +78,12 @@ gem 'font-awesome-rails'
 
 # Adding user authentication
 gem 'devise'
+
+# Adding image/video uploading using CarrierWave
+gem 'carrierwave', '~> 2.0'
+
+# Figaro gem that will securely configure Rails applications
+gem 'figaro'
+
+# Gem that allows carrierwave to communicate with Amazon S3
+gem 'fog-aws'

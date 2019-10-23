@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   #hooking up courses for students
   resources :courses, only: [:index, :show]
+  resources :lessons, only: [:show]
   #hooking up courses for instructors - namespace b/c of separate views/permissions
   namespace :instructor do
     resources :sections, only: [] do
