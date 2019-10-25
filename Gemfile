@@ -87,3 +87,6 @@ gem 'figaro'
 
 # Gem that allows carrierwave to communicate with Amazon S3
 gem 'fog-aws'
+
+# Gem that allows for image sizing/manipulations
+gem 'mini_magick'
