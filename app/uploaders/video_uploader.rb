@@ -4,7 +4,7 @@ class VideoUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  if Rails.env.test?
+  if Rails.env.development?
       storage :file
     else
       storage :aws
