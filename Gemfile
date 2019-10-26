@@ -90,3 +90,6 @@ gem 'fog-aws'
 
 # Gem that allows for image sizing/manipulations
 gem 'mini_magick'
+
+# Second gem that allows carrierwave to communicate with Amazon S3 (for video uploading)
+gem 'carrierwave-aws'
