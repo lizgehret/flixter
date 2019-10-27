@@ -1,7 +1,7 @@
 class Course < ApplicationRecord
   belongs_to :user
   has_many :sections
-  # has_many :images
+  has_many :enrollments
 
   # title validation - needs to exist
   validates :title, presence: true
