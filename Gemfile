@@ -93,3 +93,6 @@ gem 'mini_magick'
 
 # Second gem that allows carrierwave to communicate with Amazon S3 (for video uploading)
 gem 'carrierwave-aws'
+
+# Gem that allows for CC payments through Stripe
+gem 'stripe'
