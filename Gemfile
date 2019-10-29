@@ -96,3 +96,6 @@ gem 'carrierwave-aws'
 
 # Gem that allows for CC payments through Stripe
 gem 'stripe'
+
+# Gem for sorting rows in your database
+gem 'ranked-model'
