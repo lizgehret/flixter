@@ -99,3 +99,6 @@ gem 'stripe'
 
 # Gem for sorting rows in your database
 gem 'ranked-model'
+
+# Extenstion of JQuery that allows for UI manipulation
+gem 'jquery-ui-rails'

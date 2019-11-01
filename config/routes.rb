@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :lessons, only: [:show]
   #hooking up courses for instructors - namespace b/c of separate views/permissions
   namespace :instructor do
+    resources :lessons, only: [:update]
     resources :sections, only: [] do
       resources :lessons, only: [:new, :create]
     end    
