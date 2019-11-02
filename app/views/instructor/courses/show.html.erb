@@ -14,6 +14,22 @@
   });
 </script>
 
+<script>
+  $(function() {
+    $('.sections').sortable({
+    // Triggering JQuery UI when a section is reordered and calling an item within ui
+      update: function( event, ui ) {
+        $.ajax({
+          type: 'PATCH',
+          url: ui.item.data('update-url'),
+          dataType: 'json',
+          data: { section: { row_order_position: ui.item.index() } }
+        });
+      }
+    });
+  });
+</script>
+
 <br />
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
@@ -29,9 +45,9 @@
   </div>
   <br />
 
-  <ul>
+  <ul class="sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
-      <li>
+      <li data-update-url="<%= instructor_section_path(section) %>">
         <%= section.title %>
         <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
         <ul class="lessons">
